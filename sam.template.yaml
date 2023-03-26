@@ -1,0 +1,15 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: 'AWS::Serverless-2016-10-31'
+Description: Simple Java Lambda Functions
+Resources:
+  SimpleJavaFunction:
+    Type: 'AWS::Serverless::Function'
+    Properties:
+      FunctionName: simple-java-lambda
+      Handler: org.weathertracker.App::handleRequest
+      Runtime: java8
+      Description: Simple Java Lambda Function
+      MemorySize: 512
+      Timeout: 60
+      PackageType: Zip
+      CodeUri: '.'
