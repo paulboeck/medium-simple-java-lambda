@@ -25,4 +25,4 @@ jobs:
       - name: Run SAM Build
         run: sam build -t sam.template.yaml
       - name: Run SAM Delete
-        run: sam delete --no-prompts --stack-name simple-java-lambda
+        run: sam delete --no-prompts --stack-name simple-java-lambda --region ${{ secrets.AWS_REGION }}
