@@ -6,7 +6,7 @@ Resources:
     Type: 'AWS::Serverless::Function'
     Properties:
       FunctionName: simple-java-lambda
-      Handler: org.weathertracker.App::handleRequest
+      Handler: org.example.App::handleRequest
       Runtime: java8
       Description: Simple Java Lambda Function
       MemorySize: 512
